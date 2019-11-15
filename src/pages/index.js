@@ -20,7 +20,7 @@ const IndexPage = () => {
     const hello = () =>
       axios({
         method: "get",
-        url: "http://localhost:9000/hello",
+        url: "/.netlify/functions/hello",
         params: {
           searchName: name,
         },
